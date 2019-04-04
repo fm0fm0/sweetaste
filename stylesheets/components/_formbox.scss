@@ -1,0 +1,29 @@
+//訂閱郵件元件
+.formbox{
+    max-width: 380px;
+    background: $secondary;
+
+    position: relative;
+    label{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+    input{
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 40px;
+        padding-right: 65px;
+        background: transparent;
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 64px;
+        z-index: 4;
+    }
+}

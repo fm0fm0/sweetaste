@@ -1,0 +1,58 @@
+.bin-group{
+    margin-top: -90px;
+}
+.bin-wrap{
+    height: 180px;
+    @include md{
+        height: 256px;
+    }
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .6s ease;
+    &:nth-child(1){
+        border-right: 1px solid #fff;
+    }
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $primary;
+        .bin-overlay{
+            background: rgba( $warning, .8);
+        }
+        .bin-img{
+            filter: blur(0);
+        }
+    }
+    .bin-text{
+        @include writing-mode;
+        font-size: 24px;
+        letter-spacing: 10px;
+        font-weight: 700;
+    }
+    .bin-overlay{
+        background-color: rgba( $primary, 0.8);
+        transition: background-color .5s;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;   
+    } 
+    .bin-img{
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        z-index: -2;
+        @include bgcover;
+        filter: blur(5px);
+        transition: filter .5s;
+    }
+}

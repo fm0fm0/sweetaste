@@ -1,0 +1,21 @@
+// 訂單摘要
+.cart-detail-dark{
+    h2{
+        color: $primary;
+        background: $secondary;
+        border: none;
+    }
+    @include md{
+        background: $primary;
+        h2{
+            color: $secondary;
+            background: none;
+        }
+        table{
+            border-top: 1px solid $secondary;
+        }
+        tr{
+            color: $secondary;
+        }
+    }
+}

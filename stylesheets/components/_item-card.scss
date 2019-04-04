@@ -1,0 +1,45 @@
+%item-card-body{
+    padding: 18px 0;
+}
+
+
+//item-card
+.item-card{
+    margin-bottom: 20px;
+    .item-card-btn{
+        text-decoration: none;
+    }
+}
+.item-card-top{
+    position: relative;
+    .item-card-tag{
+        padding: 10px 5px;
+        letter-spacing: 4px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        @include writing-mode
+    }
+    .item-card-icon{
+        i{
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        cursor: pointer;
+    }
+}
+.item-card-body{
+    border: 1px solid $secondary;
+    .item-card-product{
+        width: 60%;
+        border-right: 1px solid $secondary;
+        @extend %item-card-body;
+    }
+    .item-card-price{
+        width: 40%;
+        @extend %item-card-body;
+
+    }
+}

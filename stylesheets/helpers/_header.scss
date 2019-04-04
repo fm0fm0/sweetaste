@@ -1,0 +1,25 @@
+//header
+.header-wrap{
+    position: relative;
+    .header-title{
+        height: 218px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        @include md{
+            height: 328px;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+
+    }
+}
+.header-banner{
+    height: 277px;
+    @include bgcover;
+    @include md{
+        height: 496px;
+    }
+}
+

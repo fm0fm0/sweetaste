@@ -1,0 +1,45 @@
+//引入用@include
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+  }
+}
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin bgcover {
+    background-size: cover;
+    background-position: center center;
+}
+@mixin writing-mode{
+    writing-mode: vertical-rl;
+}
+@mixin text-hide {
+    // text-indent: -110%;
+    // overflow: hidden;
+    color: transparent;
+    background: transparent;
+    font-size: 0;
+}
+
+
+//font-awesome icon
+@mixin element-icon($size,$lineheight) {
+    font-size: $size;
+    line-height: $lineheight;
+}
+
+

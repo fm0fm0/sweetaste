@@ -1,0 +1,30 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+//自定義共用
+@import "helpers/mixin2";
+
+//layout
+@import "helpers/header"; 
+@import "helpers/sections"; 
+
+
+//自定義元件
+@import "components/bin-group";         //首頁header下方三個
+@import "components/formbox";           //訂閱郵件
+@import "components/item-card";         //產品卡片
+@import "components/element-icon";      //font-awesome icon
+@import "components/member-login";      //會員登入
+@import "components/proress-bar";       //進度條
+@import "components/cart-item";         //購物車明細
+@import "components/cart-detail-dark";  //訂單摘要
+@import "components/nav-dark";          //checkout-3
+
+//通用類別
+@import "helpers/utilities"
+

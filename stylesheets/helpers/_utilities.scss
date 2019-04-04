@@ -1,0 +1,9 @@
+.bgcover{
+    @include bgcover
+}
+.text-hide{
+    @include text-hide
+}
+.text-transparent{
+    color: rgba($color: #000000, $alpha: 0);
+}

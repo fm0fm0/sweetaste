@@ -1,0 +1,62 @@
+// 進度條
+@mixin progress-bar-point{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid $secondary;
+  background: $primary;
+}
+@mixin point-position($top,$left){
+  position: absolute;
+    top: $top;
+    left: $left;
+}
+.progress-bar-wrap{
+  position: relative;
+}
+.progress-bar{
+  border-top: 1px solid $secondary;
+  max-width: 190px;
+  position: relative;
+  .progress-bar-start{
+    @include progress-bar-point;
+    @include point-position(-10px,0);
+  }
+  .progress-bar-center{
+    @include progress-bar-point;
+    @include point-position(-10px,50%);
+    transform: translateX(-50%);
+  }
+  .progress-bar-end{
+    @include progress-bar-point;
+    @include point-position(-10px,100%);
+    transform: translateX(-50%);
+  }
+  .progress-bar-point.active{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $secondary;
+    position: absolute;
+    top: 2px;
+    left: 2px; 
+  }
+  .progress-bar-check.active{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $secondary;
+    background: $secondary;
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+}
+.text-primary{
+  color: $primary;
+}
+.check-icon{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}

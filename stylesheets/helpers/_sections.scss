@@ -1,0 +1,36 @@
+.section{
+    .section-article{
+        max-height: 440px;
+    }
+    .section-title{
+        margin-top:-20px;
+    }
+    .section-title-sm{
+        height: 60px;
+    }
+    .section-title-lg{
+        width: 88.94px;
+    }
+    .section-img-wrap{
+        @include md{
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+    }
+    .section-img{
+        // min-width: 250px;
+        min-height: 250px;
+        @include bgcover
+    }
+    .section-text{
+        @include md{
+            @include writing-mode
+        }
+        p{
+            line-height: 2;
+            @include lg{
+                line-height: 2.5;
+            }
+        }
+    }
+}

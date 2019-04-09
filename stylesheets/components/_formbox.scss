@@ -4,22 +4,22 @@
     background: $secondary;
 
     position: relative;
-    label{
+    .formbox-label{
         position: absolute;
         top: 50%;
         left: 15px;
         transform: translateY(-50%);
         z-index: 4;
     }
-    input{
-        position: relative;
-        top: 0;
-        left: 0;
+    .formbox-input{
+        // position: relative;
+        // top: 0;
+        // left: 0;
         padding-left: 40px;
         padding-right: 65px;
-        background: transparent;
+        // background: transparent;
     }
-    button{
+    .formbox-btn{
         position: absolute;
         top: 0;
         right: 0;

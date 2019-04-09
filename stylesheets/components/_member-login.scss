@@ -2,14 +2,14 @@
 .member-login{
     position: relative;
     background: $secondary;
-    label{
+    .member-login-label{
         position: absolute;
         top: 50%;
         left: 10px;
         transform: translateY(-50%);
         z-index: 1;
     }
-    input{
+    .member-login-input{
         position: relative;
         top: 0;
         left: 0;

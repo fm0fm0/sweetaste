@@ -1,20 +1,20 @@
 // 訂單摘要
 .cart-detail-dark{
-    h2{
+    .cart-detail-dark-title{
         color: $primary;
         background: $secondary;
         border: none;
     }
     @include md{
         background: $primary;
-        h2{
+        .cart-detail-dark-title{
             color: $secondary;
             background: none;
         }
-        table{
+        .cart-detail-dark-table{
             border-top: 1px solid $secondary;
         }
-        tr{
+        .cart-detail-dark-tr{
             color: $secondary;
         }
     }

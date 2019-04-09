@@ -62,149 +62,156 @@
 
 
     <!-- main start -->
-    <section class="container row mx-auto mb-md-5 px-0 px-md-1">
-        <div class="col-md-7 px-0 px-md-1">
-            <!-- 運送欄位 -->
-            <div class="bg-primary">
-                <form class="px-4">
-                    <div class="form-row py-10">
-                        <div class="col-6">
-                            <h2 class="h3 text-secondary font-weight-bold">運送</h2>
-                        </div>
-                        <div class="col-6 progress-bar-wrap pt-2">
-                            <!-- 進度條放這 -->
-                            <div class="progress-bar ml-auto">
-                                <div class="progress-bar-start">
-                                    <div class="progress-bar-check">
-                                        <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="progress-bar-point active"></div>
-                                </div>
-                                <div class="progress-bar-point progress-bar-center">
-                                    <div class="progress-bar-check">
-                                        <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="progress-bar-point"></div>
-                                </div>
-                                <div class="progress-bar-point progress-bar-end">
-                                    <div class="progress-bar-check">
-                                        <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="progress-bar-point"></div>
-                                </div>
+    <section class="container my-md-5">
+        <div class="row">
+            <div class="col-md-8 px-0 px-md-1">
+                <!-- 運送欄位 -->
+                <div class="bg-primary">
+                    <form class="px-4">
+                        <div class="form-row py-10">
+                            <div class="col-6">
+                                <h2 class="h3 text-secondary font-weight-bold">運送</h2>
                             </div>
-                            <!-- 進度條結束 -->
+                            <div class="col-6 progress-bar-wrap pt-2">
+                                <!-- 進度條放這 -->
+                                <div class="progress-bar ml-auto">
+                                    <div class="progress-bar-start">
+                                        <div class="progress-bar-check">
+                                            <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="progress-bar-point active"></div>
+                                    </div>
+                                    <div class="progress-bar-point progress-bar-center">
+                                        <div class="progress-bar-check">
+                                            <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="progress-bar-point"></div>
+                                    </div>
+                                    <div class="progress-bar-point progress-bar-end">
+                                        <div class="progress-bar-check">
+                                            <i class="fa fa-check text-primary check-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="progress-bar-point"></div>
+                                    </div>
+                                </div>
+                                <!-- 進度條結束 -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputFirstname" class="h5 text-secondary font-weight-bold">姓氏</label>
-                            <input type="text" class="form-control" id="inputFirstname" placeholder="王">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputFirstname" class="h5 text-secondary font-weight-bold">姓氏</label>
+                                <input type="text" class="form-control" id="inputFirstname" placeholder="王">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputLastname" class="h5 text-secondary font-weight-bold">名字</label>
+                                <input type="text" class="form-control" id="inputLastname" placeholder="小六">
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputLastname" class="h5 text-secondary font-weight-bold">名字</label>
-                            <input type="text" class="form-control" id="inputLastname" placeholder="小六">
+                        <div class="form-group">
+                            <label for="inputTel" class="h5 text-secondary font-weight-bold">電話</label>
+                            <input type="tel" class="form-control" id="inputTel" placeholder="0912-345-678">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputTel" class="h5 text-secondary font-weight-bold">電話</label>
-                        <input type="tel" class="form-control" id="inputTel" placeholder="0912-345-678">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <label for="inputCity" class="h5 text-secondary font-weight-bold">地址</label>
-                            <select id="inputCity" class="form-control">
-                                <option selected>台北市</option>
-                                <option>台中市</option>
-                                <option>高雄市</option>
-                            </select>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="inputCity" class="h5 text-secondary font-weight-bold">地址</label>
+                                <select id="inputCity" class="form-control">
+                                    <option selected>台北市</option>
+                                    <option>台中市</option>
+                                    <option>高雄市</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6 ">
+                                <label for="inputDist" class="h5 text-transparent">區域</label>
+                                <select id="inputDist" class="form-control">
+                                    <option selected>大安區</option>
+                                    <option>北屯區</option>
+                                    <option>前鎮區</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group col-6 ">
-                            <label for="inputDist" class="h5 text-transparent">區域</label>
-                            <select id="inputDist" class="form-control">
-                                <option selected>大安區</option>
-                                <option>北屯區</option>
-                                <option>前鎮區</option>
-                            </select>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="幸福路520號">
                         </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="text" class="form-control" id="inputAddress" placeholder="幸福路520號">
-                    </div>
-                </form>
-                <a href="checkout-2.html" class="btn btn-warning text-primary w-100 h4 font-weight-bold mb-0">下一步</a>
+                    </form>
+                    <a href="checkout-2.html"
+                        class="btn btn-warning text-primary w-100 h4 font-weight-bold mb-0">下一步</a>
+                </div>
             </div>
 
-        </div>
-        <div class="col-md-5 d-none d-md-block">
-            <div class="row flex-column">
-                <div class="col">
-                    <!-- 訂單摘要 -->
-                    <table class="table table-borderless">
-                        <tbody class="text-minor border border-secondary">
-                            <h2 class="h4 font-weight-bold text-minor text-center bg-secondary py-10 mb-0">訂單摘要</h2>
-                            <tr>
-                                <th scope="row">小計</th>
-                                <td class="text-right">NT$ 2,700</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">運費</th>
-                                <td class="text-right">NT$ 300</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="h5 font-weight-bold">總計</th>
-                                <td class="h5 font-weight-bold text-right">NT$ 3,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col">
-                    <!-- 購物清單 -->
-                    <h2 class="h4 font-weight-bold text-minor text-center bg-secondary py-10 mb-0">訂單摘要</h2>
-                    <div class="row border border-secondary mx-0 d-flex flex-column pt-10">
-                        <div class="col">
-                            <div class="row d-flex align-items-center pb-10">
-                                <div class="col-6 px-2">
-                                    <div class="bgcover"
-                                        style="background-image:url(https://bit.ly/2QvsT63); height:80px;">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="row flex-column">
+                    <div class="col">
+                        <!-- 訂單摘要 -->
+                        <table class="table table-borderless">
+                            <tbody class="text-minor border border-secondary">
+                                <h2 class="h4 font-weight-bold text-minor text-center bg-secondary py-10 mb-0">訂單摘要</h2>
+                                <tr>
+                                    <th scope="row">小計</th>
+                                    <td class="text-right">NT$ 2,700</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">運費</th>
+                                    <td class="text-right">NT$ 300</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="h5 font-weight-bold">總計</th>
+                                    <td class="h5 font-weight-bold text-right">NT$ 3,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <!-- 購物清單 -->
+                        <h2 class="h4 font-weight-bold text-minor text-center bg-secondary py-10 mb-0">訂單摘要</h2>
+                        <div class="row border border-secondary mx-0 d-flex flex-column pt-10">
+                            <div class="col">
+                                <div class="row d-flex align-items-center pb-10">
+                                    <div class="col-6 px-2">
+                                        <div class="bgcover"
+                                            style="background-image:url(https://bit.ly/2QvsT63); height:80px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-6 text-minor pl-1">
-                                    <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
-                                    <span class="h5 font-weight-bold">NT$ 900</span>
+                                    <div class="col-6 text-minor pl-1">
+                                        <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
+                                        <span class="h5 font-weight-bold">NT$ 900</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="row d-flex align-items-center pb-10">
-                                <div class="col-6 px-2">
-                                    <div class="bgcover"
-                                        style="background-image:url(https://bit.ly/2zBDAxX); height:80px;">
+                            <div class="col">
+                                <div class="row d-flex align-items-center pb-10">
+                                    <div class="col-6 px-2">
+                                        <div class="bgcover"
+                                            style="background-image:url(https://bit.ly/2zBDAxX); height:80px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-6 text-minor pl-1">
-                                    <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
-                                    <span class="h5 font-weight-bold">NT$ 900</span>
+                                    <div class="col-6 text-minor pl-1">
+                                        <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
+                                        <span class="h5 font-weight-bold">NT$ 900</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="row d-flex align-items-center pb-10">
-                                <div class="col-6 px-2">
-                                    <div class="bgcover"
-                                        style="background-image:url(https://bit.ly/2zKOP7w); height:80px;">
+                            <div class="col">
+                                <div class="row d-flex align-items-center pb-10">
+                                    <div class="col-6 px-2">
+                                        <div class="bgcover"
+                                            style="background-image:url(https://bit.ly/2zKOP7w); height:80px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-6 text-minor pl-1">
-                                    <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
-                                    <span class="h5 font-weight-bold">NT$ 900</span>
+                                    <div class="col-6 text-minor pl-1">
+                                        <h5 style="font-size:16px">焦糖馬卡龍 (2)</h5>
+                                        <span class="h5 font-weight-bold">NT$ 900</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
 
     </section>
 
@@ -220,11 +227,12 @@
                 </div>
                 <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
                     <div class="input-group formbox">
-                        <label class="" for="sub-input">
+                        <label class="formbox-label" for="sub-input">
                             <i class="fa fa-envelope text-primary element-icon" aria-hidden="true"></i>
                         </label>
-                        <input class="form-control" id="sub-input" type="email" placeholder="" aria-label="subscribe">
-                        <button class="btn btn-warning" type="submit">
+                        <input class="form-control formbox-input" id="sub-input" type="email" placeholder=""
+                            aria-label="subscribe">
+                        <button class="btn btn-warning formbox-btn" type="submit">
                             <i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>
                         </button>
                     </div>

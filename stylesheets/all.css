@@ -2034,7 +2034,7 @@ pre code {
   color: #3F5D45;
   background-color: #EAF0ED;
   background-clip: padding-box;
-  border: 1px solid none;
+  border: 1px solid transparent;
   border-radius: 0;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3803,7 +3803,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid none;
+  border: 1px solid transparent;
 }
 
 .input-group-text input[type="radio"],
@@ -4013,7 +4013,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   background-color: #EAF0ED;
-  border: 1px solid none;
+  border: 1px solid transparent;
   border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4110,7 +4110,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #3F5D45;
   background-color: #EAF0ED;
-  border: 1px solid none;
+  border: 1px solid transparent;
 }
 
 .custom-file-label::after {
@@ -12157,7 +12157,7 @@ a.text-minor:hover, a.text-minor:focus {
   position: relative;
 }
 
-.formbox label {
+.formbox .formbox-label {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -12166,16 +12166,12 @@ a.text-minor:hover, a.text-minor:focus {
   z-index: 4;
 }
 
-.formbox input {
-  position: relative;
-  top: 0;
-  left: 0;
+.formbox .formbox-input {
   padding-left: 40px;
   padding-right: 65px;
-  background: transparent;
 }
 
-.formbox button {
+.formbox .formbox-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -12244,7 +12240,7 @@ a.text-minor:hover, a.text-minor:focus {
   background: #EAF0ED;
 }
 
-.member-login label {
+.member-login .member-login-label {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -12253,7 +12249,7 @@ a.text-minor:hover, a.text-minor:focus {
   z-index: 1;
 }
 
-.member-login input {
+.member-login .member-login-input {
   position: relative;
   top: 0;
   left: 0;
@@ -12339,8 +12335,10 @@ a.text-minor:hover, a.text-minor:focus {
   left: 1px;
 }
 
-.cart-item {
-  border-bottom: 1px solid #EAF0ED;
+@media (min-width: 768px) {
+  .cart-item {
+    border-bottom: 1px solid #EAF0ED;
+  }
 }
 
 .cart-item .cart-item-prepend {
@@ -12353,7 +12351,17 @@ a.text-minor:hover, a.text-minor:focus {
   }
 }
 
-.cart-detail-dark h2 {
+.cart-item .cart-item-append {
+  border-bottom: 1px solid #EAF0ED;
+}
+
+@media (min-width: 768px) {
+  .cart-item .cart-item-append {
+    border: none;
+  }
+}
+
+.cart-detail-dark .cart-detail-dark-title {
   color: #3F5D45;
   background: #EAF0ED;
   border: none;
@@ -12363,19 +12371,19 @@ a.text-minor:hover, a.text-minor:focus {
   .cart-detail-dark {
     background: #3F5D45;
   }
-  .cart-detail-dark h2 {
+  .cart-detail-dark .cart-detail-dark-title {
     color: #EAF0ED;
     background: none;
   }
-  .cart-detail-dark table {
+  .cart-detail-dark .cart-detail-dark-table {
     border-top: 1px solid #EAF0ED;
   }
-  .cart-detail-dark tr {
+  .cart-detail-dark .cart-detail-dark-tr {
     color: #EAF0ED;
   }
 }
 
-.nav-dark a {
+.nav-dark .nav-dark-link {
   color: #EAF0ED;
   border: 1px solid #EAF0ED;
 }

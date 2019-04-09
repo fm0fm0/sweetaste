@@ -1,7 +1,15 @@
 // 購物車明細
 .cart-item{
-    border-bottom: 1px solid $secondary;
+    @include md{
+        border-bottom: 1px solid $secondary;
+    }
     .cart-item-prepend{
+        border-bottom: 1px solid $secondary;
+        @include md{
+            border: none;
+        }
+    }
+    .cart-item-append{
         border-bottom: 1px solid $secondary;
         @include md{
             border: none;
